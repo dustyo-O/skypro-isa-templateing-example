@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      max-width: 100%;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .image {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fff;
+      border-radius: 4px;
+      border: 1px solid #3333;
+      box-shadow: 3px 3px 2px 0 #1111 ;
+    }
+
+    .image__picture {
+      height: 300px;
+
+      background-position: center;
+      background-size: cover;
+      border-bottom: 1px solid #3333;
+    }
+    .image__footer {
+      padding: 10px;
+    }
+    .image__author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .image__author-avatar {
+      border-radius: 50%;
+    }
+    .image__likes {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .image__heart {
+      margin-left: 4px;
+
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <article class="image">
+      <div class="image__picture" style="background-image: url('https://images.unsplash.com/photo-1629754956905-c285d73b187a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNjA2MzJ8MHwxfGFsbHw0fHx8fHx8Mnx8MTYzMTYyODY1MA&ixlib=rb-1.2.1&q=80&w=200');">
+
+      </div>
+      <footer class="image__footer">
+        <div class="image__author">
+          <img src="https://images.unsplash.com/profile-1629120783469-5f48eb474c7fimage?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32" class="image__author-avatar">
+          <span class="image__author-name">Bailey Alexander</span>
+        </div>
+        <p class="image__description">woman looking at the city buildings during daytime</p>
+        <span class="image__likes">2<i class="fa fa-heart image__heart" aria-hidden="true"></i></span>
+      </footer>
+    </article>
+  </div>
+  <script src="https://use.fontawesome.com/dd8629e325.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
